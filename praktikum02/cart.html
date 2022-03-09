@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/keranjang-belanja.png">
+    <title>Cart</title>
+</head>
+<body style="margin: 0; padding: 0;">
+    <div style="background-color:yellow; border: 1px solid black; display:flex;">
+        <p style="font-size: 20px; margin-left: 20px;">
+            <svg style="width:20px;height:15px;" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20Z" />
+            </svg>
+            <b>Site Name</b>
+        </p>
+        <p style="padding-left: 20px; padding-top: 8px;">
+            <a href="CV_0110121211_DikiDarmawan.html" style="text-decoration-line: none;">Category 1 |</a>  
+            <a href="FORM_0110121211_DikiDarmawan.html" style="text-decoration-line: none;">Category 2 |</a> 
+            <a href="TUGAS3.2_0110121211_DikiDarmawan.html" style="text-decoration-line: none;">Category 3</a></p>
+    <div style="display: flex; margin-left: auto; margin-right: 20px;">
+        <img src="./img/search.png" alt="" style="margin-top:20px; width: 40px; height: 25px;">
+        <img src="./img/keranjang-belanja.png" alt="" style="margin-top: 18px; width: 30px; height: 25px;">
+        <p style="padding-top: 8px; padding-left: 2px;">Cart (1)</p>
+    </div>
+    </div>
+
+    <div style="padding-top: 50px; display: flex;">
+        <table style="width:60%;">
+            <tr>
+                <th colspan="4" style="font-size: 30px; text-align: left;">Your Cart</th>
+            </tr>
+            <tr>    
+                <td colspan="4"><hr></td>
+            </tr>
+            <tr>
+                <td colspan="2">Item</td>
+                <td style="width: 150px;"> Price</td>
+                <td style="width: 100px;">Quantity</td>
+            </tr>
+            <tr>
+                <td colspan="4"><hr></td>
+            </tr>
+            <tr>
+                <td><img src="./img/kaos.jfif" alt="" style="width: 200px;"></td>
+                <td style="width:300px;">T-shirt <br> Size:Small</td>
+                <td><b>$30.00</b></td>
+                <td><input type="number" id="quantity" name="quantity" min="1" max="5" ></td>
+            </tr>
+            <tr>
+                <td colspan="4"><hr></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan="2" style="text-align: right;">Sub Total : $30.00</td>
+            </tr>
+            <tr>
+                <td colspan="4"><hr></td>
+            </tr>
+        </table>
+
+        <table style="background-color: yellow; width: 30%; padding: 20px; margin-left: 20px;">
+            <form action="CEKOUT_0110121211_DikiDarmawan.html">
+            <tr>
+                <td style="height:30px;" colspan="2"><b>Summary (1 item)</b></td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td style="text-align: right;">$30.00</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td style="text-align: right;">-</td>
+            </tr>
+            <tr>
+                <td>Est.Toxes</td>
+                <td style="text-align: right;">-</td>
+            </tr>
+            <tr> 
+                <td colspan="2"><hr style="border-color:black;"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td style="text-align: right;">$30.00</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" style="width: 100%; background-color: white; color:black;">
+                </td>
+            </tr>
+            </form>
+        </table>
+
+    </div> 
+    <br><br><br><br>
+    <hr>
+    <div style="display:flex; margin-left:auto;">
+    <div>
+        <table>
+            <tr>
+                <td>Site Name</td>
+                <td colspan="2">
+                    <a href="TUGAS3.2_0110121211_DikiDarmawan.html" style="text-decoration-line:none;">Category 1 |</a>  
+                    <a href="CEKOUT_0110121211_DikiDarmawan.html" style="text-decoration-line:none;">Category 2 |</a> 
+                    <a href="CV_0110121211_DikiDarmawan.html" style="text-decoration-line:none;">Category 3</a> 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="./img/visa.png" alt="" style="width:30px;">
+                    <img src="./img/kartudebit.png" alt="" style="width:30px;">
+                    <img src="./img/kartuatm.png" alt="" style="width:30px;">
+                </td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-left: auto;">
+        <table>
+            <tr>
+                <td colspan="2">Stay In Touch! Join our Newsletter</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" value="Enter Email"> 
+                </td>
+                <td>
+                    <button>Subscribe</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html> 
