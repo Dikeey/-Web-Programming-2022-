@@ -1,0 +1,160 @@
+/* utility */
+body {
+    background-image: url(./img/all-background.png);
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .tombol {
+    text-transform: uppercase;
+    border-radius: 2em;
+    font-weight: 500;
+    border: 1px solid #6cbee4;
+    background-color: #6cbee4;
+    color: black;
+  }
+  .tombol:hover {
+    background: transparent;
+    border: 1px solid #6cbee4;
+    color: white;
+  }
+  
+  /* navbar */
+  .navbar {
+    background-color: lavender;
+  }
+  .navbar-brand {
+    font-family: 'Viga', sans-serif;
+    font-size: 32px;
+  }
+  .navbar .logo {
+    width: 49px;
+  }
+  
+  /* Jumbotron */
+  .jumbotron {
+    background-image: url(./img/programmer.jpg);
+    background-size: cover;
+    height: 540px;
+  }
+  
+  .jumbotron h1 {
+    padding-top: 180px;
+    font-weight: 300;
+  }
+  .jumbotron h1 span {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.5em;
+  }
+  .jumbotron p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Section 1 */
+  .section-1 {
+    background-color: #182724;
+  }
+  .row .heading {
+    font-family: 'Caveat', cursive;
+    font-size: 3em;
+    text-shadow: 2px 1px rgb(243, 0, 0);
+  }
+  
+  /* Section 2 */
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  /* section 5 */
+  .logo-perusahaan {
+    width: 10%;
+  }
+  
+  /* footer */
+  .footer {
+    background-color: #002a68;
+    color: beige;
+  }
+  .footer .footer-hosting {
+    font-family: 'Viga', sans-serif;
+    font-size: 1.5em;
+  }
+  .footer .logo-footer {
+    width: 50px;
+    /* background-color: bisque; */
+  }
+  .footer .footer-hosting:hover {
+    color: beige;
+  }
+  .col-2 a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    /* color: #bbbbbb; */
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .col-2 a:hover {
+    color: rgb(5, 222, 238);
+    padding-left: 8px;
+  }
+  .flexcolumn a {
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .flexcolumn a:hover {
+    color: #fff;
+    padding-left: 4px;
+  }
+  .footer .link-sosial-media {
+    padding: 10px;
+    border-radius: 1em;
+  }
+  .footer .link-sosial-media:hover {
+    background-color: beige;
+  }
+  
+  /* Desktop Version */
+  @media (min-width: 992px) {
+    .navbar {
+      background-color: transparent;
+    }
+    .navbar-brand,
+    .nav-link {
+      color: white !important;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+    .nav-link {
+      text-transform: uppercase;
+    }
+    .nav-link:hover::after {
+      content: '';
+      display: block;
+      border-bottom: 3px solid #6cbee4;
+      border-radius: 3px;
+      width: 50%;
+      margin: auto;
+      padding-bottom: 5px;
+      margin-bottom: -8px;
+    }
+    .jumbotron {
+      height: 680px;
+      margin-top: -75px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .reverse {
+      display: flex;
+      flex-direction: row;
+    }
+  }
