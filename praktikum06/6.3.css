@@ -1,0 +1,36 @@
+.box1 {
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    width: 1300px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+}
+.box2 {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    width: 450px;
+    height: 400px;
+    float: left;
+    margin: 15px;
+}
+.box3 {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    width: 820px;
+    height: 400px;
+    float: left;
+    margin: 15px;
+}
+.box4 {
+    display: flex;
+    background-color: green;
+    justify-content: center;
+    width: 1300px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+.box1 {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    width: 400px;
+    height: 650px;
+    float: left;
+}
+.box2 {
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    width: 949px;
+    height: 175px;
+    float: left;
+}
+.box3 {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    width: 650px;
+    height: 300px;
+    float: left;
+}
+.box4 {
+    display: flex;
+    background-color: blue;
+    justify-content: center;
+    width: 299px;
+    height: 300px;
+    float: left;
+}
+.box5 {
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    width: 949px;
+    height: 175px;
+    float: left;
+}
