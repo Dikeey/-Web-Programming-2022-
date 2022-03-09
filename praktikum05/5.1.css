@@ -1,0 +1,32 @@
+.box1 {
+    background-color: yellow;
+    width: 293px;
+    height: 600px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+.box2 {
+    background-color: orange;
+    width: 293px;
+    height: 600px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+.box3 {
+    background-color: green;
+    width: 293px;
+    height: 600px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+.box4 {
+    background-color: blue;
+    width: 293px;
+    height: 600px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}

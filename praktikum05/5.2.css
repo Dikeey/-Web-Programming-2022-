@@ -1,0 +1,40 @@
+.box1 {
+    background-color: green;
+    width: 1290px;
+    height: 177px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+.box2 {
+    background-color: yellow;
+    width: 300px;
+    height: 177px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+.box3 {
+    background-color: red;
+    width: 950px;
+    height: 177px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+.box4 {
+    background-color: orange;
+    width: 300px;
+    height: 177px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
+.box5 {
+    background-color: blue;
+    width: 950px;
+    height: 177px;
+    margin: 20px;
+    float: left;
+    text-align: center;
+}
