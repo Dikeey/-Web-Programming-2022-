@@ -1,0 +1,16 @@
+.container {
+    width: 100%;
+}
+
+#box {
+    width: 50%;
+    height: 300px;
+    padding: 0px 5px;
+    border: 1px solid black;
+}
+input[type=text]{
+    width: 80%;
+}
+.container_kirim {
+    width: 50%;
+}

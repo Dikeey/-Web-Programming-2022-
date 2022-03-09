@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body style="background-color: burlywood;"></body>
+        <title>Login Authentication</title>
+        <script type="text/javascript" src="otentikasi.js"></script>
+    </head>
+    <script lang="JavaScript">
+        function Login(){
+            var username=document.login.username.value;
+            username=username.toLowerCase();
+            var password=document.login.password.value;
+            password=password.toLowerCase();
+                if(username=="diki21211si" && password=="12345"){
+                    alert ("Selamat anda berhasil login");
+                }
+                else{
+                    alert ("Username dan Password anda salah!");
+                }
+        }
+    </script>
+    <body>
+        <form name="login">
+            <table width="225" cellpadding="4">
+                <tr><td>Username</td><td><input type="text" name="username"></td></tr>
+                <tr><td>Password</td><td><input type="text" name="password"></td></tr>
+                <tr><td colspan="2" align="right"><input type="button" value="Login" onclick="Login()"></td></tr>
+            </table>
+        </form>
+    </body>
+</html>

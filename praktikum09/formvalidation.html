@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: max-content;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            height: 10vh;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: black;
+            padding: 1em;
+            border-radius: 2em;
+        }
+        a:hover {
+            background-image: linear-gradient(rgb(11, 89, 255), rgb(252, 252, 252));        
+        }
+        .container {
+            width: 400px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        fieldset {
+            padding: 1.5em;
+            box-sizing: border-box;
+            border: 3px solid black;
+            box-shadow: 4px 5px black;
+            border-radius: 10px;
+            background-color: rgb(217, 255, 0);
+        }
+        legend {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .main {
+            width: max-content;
+        }
+        button {
+            width: 100%;
+            font-weight: bold;
+            padding: 2px;
+            text-transform: uppercase;
+            height: 2em;
+        }
+        td {
+            height: 2em;
+        }
+        input {
+            width: 95%;
+            box-sizing: border-box;
+            height: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="satu.html">Nomor 1</a>
+                </li>
+                <li>
+                    <a href="dua.html">Nomor 2</a>
+                </li>
+                <li>
+                    <a href="tiga.html">Nomor 3</a>
+                </li>
+                <li>
+                    <a href="empat.html">Nomor 4</a>
+                </li>
+                <li>
+                    <a href="lima.html">Nomor 5</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="main">
+        <fieldset>
+            <legend>Form Validation</legend>
+            <table>
+                <tr>
+                    <td>Nama Pelanggan</td>
+                    <td>:
+                        <input type="text" required="required" id="pelanggan" maxlength="30">
+                    </td>
+                </tr>
+                <tr>
+                <td>Email</td>
+                <td>:
+                        <input type="email" required="required" id="gmail">
+                </td>
+                </tr>
+                <tr>   
+                    <td>Jam Keberangkatan</td>
+                    <td>:
+                        <input type="time" required="required" id="waktu">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tujuan Keberangkatan</td>
+                    <td>:
+                        <input type="text" required="required" id="tujuan">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jumlah Tiket</td>
+                    <td>:
+                        <input type="number" required="required" id="jmlTiket" min="1" max="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" id="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+    </div>
+
+    <div id="hasil" style="margin: 2em;"></div>
+
+    <script>
+        const submit = document.getElementById('submit');
+        const hasil = document.getElementById('hasil');
+
+        function validateEmail(elementValue){      
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(elementValue); 
+        } 
+
+        submit.onclick = () => {
+            let usernamePelanggan = document.getElementById('pelanggan').value;
+            let emailPelanggan = document.getElementById('gmail').value;
+            let waktuPelanggan = document.getElementById('waktu').value;
+            let tujuanPelanggan = document.getElementById('tujuan').value;
+            let tiketPelanggan = document.getElementById('jmlTiket').value;
+
+
+
+            if (usernamePelanggan === '' && emailPelanggan === '' && waktuPelanggan === '' && tujuanPelanggan === '' && tiketPelanggan === ''){
+                alert('Masukkan Data anda terlebih dahulu')
+            }
+                else if (usernamePelanggan === '' || usernamePelanggan === null){
+                    alert('Masukkan Nama anda')
+                }
+                else if (emailPelanggan === '' || emailPelanggan === null){
+                    alert('Masukkan Email anda')
+                }
+                else if (waktuPelanggan === '' || waktuPelanggan === null){
+                    alert('Masukkan Jam Keberangkatan anda')
+                }
+                else if (tujuanPelanggan === '' || tujuanPelanggan === null){
+                    alert('Masukkan Tujuan Keberangkatan anda')
+                }
+                else if (tiketPelanggan === '' || tiketPelanggan === null){
+                    alert('Masukkan Jumlah Tiket anda');
+                } else if(validateEmail(emailPelanggan) != true){
+                    alert('Format email salah');
+                }
+            else{
+                // console.log("Nama Pelanggan :" + usernamePelanggan + "\nemail :" + emailPelanggan  + "\nJam Keberangkatan :" + waktuPelanggan  + "\nTujuan :" + tujuanPelanggan  + "\nJumlah Tiket :" + tiketPelanggan)
+
+                const p = document.createElement('P');
+                hasil.appendChild(p);
+                p.innerHTML = "<table> <tr> <td> Nama Pelanggan : " + usernamePelanggan + 
+                    "<tr><td> email : " + emailPelanggan  + 
+                        "<tr><td> Jam Keberangkatan : " + waktuPelanggan  +
+                             "<tr><td> Tujuan : " + tujuanPelanggan  + 
+                                "<tr><td> Jumlah Tiket : " + tiketPelanggan;
+            }
+        }
+    </script>
+</body>
+</html> 
