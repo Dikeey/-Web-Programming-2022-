@@ -1,0 +1,26 @@
+.container {
+    width: 50%;
+}
+
+fieldset {
+    background: yellow;
+}
+
+table th {
+    background: yellow;
+    width: 20%;
+}
+
+table td{
+    background: #ffffff;
+    width: 20%;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+}
+
+#uang {
+    width: 97%;
+}
